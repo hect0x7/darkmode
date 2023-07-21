@@ -3,12 +3,10 @@
 // @namespace         https://github.com/syhyz1990/darkmode
 // @version           2.2.1
 // @description       实现任意网站的夜间模式，支持网站白名单
-// @author            YouXiaoHou
+// @author            hect0x7
 // @license           MIT
 // @homepage          https://www.youxiaohou.com/tool/install-darkmode.html
-// @supportURL        https://github.com/syhyz1990/darkmode
-// @updateURL         https://www.youxiaohou.com/darkmode.user.js
-// @downloadURL       https://www.youxiaohou.com/darkmode.user.js
+// @supportURL        https://hect0x7.com/syhyz1990/darkmode
 // @match             *://*/*
 // @require           https://unpkg.com/darkrule@latest/dist/rule.min.js
 // @require           https://unpkg.com/sweetalert2@10.16.6/dist/sweetalert2.min.js
