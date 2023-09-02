@@ -24,11 +24,13 @@
 
     let util = {
         getValue(name) {
-            return GM_getValue(name);
+            let pageKey = location.hostname;
+            return GM_getValue(pageKey + name);
         },
 
         setValue(name, value) {
-            GM_setValue(name, value);
+            let pageKey = location.hostname;
+            GM_setValue(pageKey + name, value);
         },
 
         addStyle(id, tag, css) {
