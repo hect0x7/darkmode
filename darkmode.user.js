@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              夜间模式助手
 // @namespace         https://github.com/syhyz1990/darkmode
-// @version           2.2.1
+// @version           2.2.3
 // @description       实现任意网站的夜间模式，支持网站白名单
 // @author            hect0x7
 // @license           MIT
