@@ -24,13 +24,18 @@
 
     let util = {
         getValue(name) {
-            let pageKey = location.hostname;
-            return GM_getValue(pageKey + name);
+            if (name === 'dark_mode') {
+                name = location.hostname + name;
+            }
+
+            return GM_getValue(name);
         },
 
         setValue(name, value) {
-            let pageKey = location.hostname;
-            GM_setValue(pageKey + name, value);
+            if (name === 'dark_mode') {
+                name = location.hostname + name;
+            }
+            GM_setValue(name, value);
         },
 
         addStyle(id, tag, css) {
