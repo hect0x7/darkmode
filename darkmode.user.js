@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name              夜间模式助手
-// @namespace         https://github.com/syhyz1990/darkmode
-// @version           2.2.3
+// @namespace         https://github.com/hect0x7/darkmode
+// @version           2.2.4
 // @description       实现任意网站的夜间模式，支持网站白名单
 // @author            hect0x7
 // @license           MIT
 // @homepage          https://www.youxiaohou.com/tool/install-darkmode.html
-// @supportURL        https://hect0x7.com/syhyz1990/darkmode
+// @supportURL        https://github.com/hect0x7/darkmode
+// @updateURL         https://github.com/hect0x7/darkmode/blob/master/darkmode.user.js
+// @downloadURL       https://github.com/hect0x7/darkmode/blob/master/darkmode.user.js
 // @match             *://*/*
 // @require           https://unpkg.com/darkrule@latest/dist/rule.min.js
 // @require           https://unpkg.com/sweetalert2@10.16.6/dist/sweetalert2.min.js
