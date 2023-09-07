@@ -375,7 +375,23 @@
         },
 
         isInExcludeList() {
-            return util.getValue('exclude_list').includes(location.host);
+            let exclude_list = util.getValue('exclude_list');
+            let host = location.host;
+
+            for (let pattern of exclude_list) {
+                if (pattern === host || this.matchWildcard(pattern, host)) {
+                    console.log(`${pattern} match ${host}`)
+                    return true;
+                }
+            }
+
+            return false;
+        },
+
+        matchWildcard(pattern, host) {
+            pattern = pattern.replace(/\./g, '\\.').replace(/\*/g, '.*');
+            let regex = new RegExp(`^${pattern}$`);
+            return regex.test(host);
         },
 
         isFullScreen() {
